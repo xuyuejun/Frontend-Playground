@@ -7,17 +7,101 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
     <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <base target="myFrame" />
+    <style>
+        .mdl-layout__content {
+            padding: 10px;
+        }
+
+        .mdl-layout__drawer {
+            width: 290px;
+        }
+
+        .iframe-padding {
+            padding-left: 295px;
+        }
+
+        .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+            color: rgb(103, 58, 183);
+        }
+    </style>
 </head>
 
-
 <body>
+    <!-- Simple header with scrollable tabs. -->
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
         <header class="mdl-layout__header">
             <div class="mdl-layout__header-row">
                 <!-- Title -->
-                <span class="mdl-layout-title">Learning Frontend Development</span>
+                <span class="mdl-layout-title">Learning JavaScript Data Structures and Algorithms</span>
+            </div>
+            <!-- Chapters -->
+            <div class="mdl-layout__tab-bar mdl-js-ripple-effect">
+                <a href="#scroll-tab-html" class="mdl-layout__tab is-active">Html</a>
+                <a href="#scroll-tab-css" class="mdl-layout__tab">CSS</a>
+                <a href="#scroll-tab-javascript" class="mdl-layout__tab">JavaScript</a>
+                <a href="#scroll-tab-algorithm" class="mdl-layout__tab">algorithm</a>
+                <a href="#scroll-tab-demo" class="mdl-layout__tab">demo</a>
+                <a href="#scroll-tab-game" class="mdl-layout__tab">game</a>
             </div>
         </header>
+        <main class="mdl-layout__content">
+            <span class="iframe-padding">Please open the Developer Tools Console to see the output</span>
+            <!-- Where the examples will be displayed -->
+            <div id="myFrame" class="iframe-padding">
+                <iframe name="myFrame" src=""></iframe>
+            </div>
+            <!-- Where the examples will be displayed - end -->
+            <section class="mdl-layout__tab-panel is-active" id="scroll-tab-html">
+                <div class="page-content mdl-layout--fixed-drawer">
+                    <div class="mdl-layout__drawer is-visible">
+                        <nav class="mdl-navigation">
+                            <a class="mdl-navigation__link" href="example/html/01-HelloWorld.html">01-HelloWorld</a>
+                        </nav>
+                    </div>
+                </div>
+            </section>
+
+            <section class="mdl-layout__tab-panel" id="scroll-tab-css">
+                <div class="page-content">
+                    <div class="page-content mdl-layout--fixed-drawer">
+                        <div class="mdl-layout__drawer is-visible">
+                            <nav class="mdl-navigation">
+                                <a class="mdl-navigation__link" href="chapter03/01-Introduction.html">01-Introduction</a>
+                                <a class="mdl-navigation__link" href="chapter03/02-CreatingAndInitialingArrays.html">02-Creating Initialing Arrays</a>
+                                <a class="mdl-navigation__link" href="chapter03/03-AddingRemovingElements.html">03-Adding Removing Elements</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="scroll-tab-javascript">
+                <div class="page-content">
+                    <div class="page-content mdl-layout--fixed-drawer">
+                        <div class="mdl-layout__drawer is-visible">
+                            <nav class="mdl-navigation">
+                                <a class="mdl-navigation__link" href="chapter04/01-Stack.html">01-Stack</a>
+                                <a class="mdl-navigation__link" href="chapter04/02-BalancedSymbols.html">02-BalancedSymbols</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="mdl-layout__tab-panel" id="scroll-tab-algorithm">
+                <div class="page-content">
+                    <div class="page-content mdl-layout--fixed-drawer">
+                        <div class="mdl-layout__drawer is-visible">
+                            <nav class="mdl-navigation">
+                                <a class="mdl-navigation__link" href="chapter05/01-Queue.html">01-Queue</a>
+                                <a class="mdl-navigation__link" href="chapter05/02-Deque.html">02-Deque</a>
+                                <a class="mdl-navigation__link" href="chapter05/03-HotPotato.html">03-HotPotato</a>
+                                <a class="mdl-navigation__link" href="chapter05/04-PalindromeChecker.html">04-PalindromeChecker</a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
     </div>
 </body>
 
