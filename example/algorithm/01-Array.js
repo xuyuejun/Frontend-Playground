@@ -44,13 +44,13 @@ numbers.shift()
 console.log(numbers)
 
 console.log("在任意位置删除元素")
-numbers.splice(5,3)
+numbers.splice(5, 3)
 console.log(numbers)
 
 console.log("在任意位置添加元素")
-numbers.splice(5,0,2,3,4)
+numbers.splice(5, 0, 2, 3, 4)
 console.log(numbers)
 
 console.log("在任意位置替换元素")
-numbers.splice(5,3,2,3,4)
+numbers.splice(5, 3, 2, 3, 4)
 console.log(numbers)
