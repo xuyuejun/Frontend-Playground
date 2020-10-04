@@ -1,0 +1,16 @@
+{
+    "name": "frontend-playground",
+    "version": "1.0",
+    "description": "Learning frontend development",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/xuyuejun/Frontend-Playground.git"
+    },
+    "license": "MIT",
+    "scripts": {
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^26.4.2"
+    }
+}
